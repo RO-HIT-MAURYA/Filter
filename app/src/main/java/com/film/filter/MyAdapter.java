@@ -54,4 +54,11 @@ public class MyAdapter extends ArrayAdapter
 
         return row;
     }
+
+    public void update(ArrayList<AndroidVersion> r)
+    {
+        items = new ArrayList<>();
+        items.addAll(r);
+        notifyDataSetChanged();
+    }
 }
